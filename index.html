@@ -1,29 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="stylesheets/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
     <![endif]-->
 </head>
 <body>
-<h1>Hello, world!</h1>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="javascripts/bootstrap.min.js"></script>
+<section class="header">
+    <img class="ofran-logo" src="images/drive-more.png">
+</section>
+<section class="bookings-header">
+    <h3 class="text-uppercase separation-line">
+        bookings and price quotes
+    </h3>
+    <h5>
+        Below are the details of your future active bookings and your valid price quotes. <br/>
+        Please note that international one way rentals/price quotes, and out of operational hours rentals/price quotes, will
+        not appear in this list.<br/>
+        For this, please call our call center at 03-7951010.
+    </h5>
+    <btn class="btn booking-btn">Create New Booking</btn>
+</section>
+<section class="search-filter">
+<h4>
+    Find reservation by:
+</h4>
+    <form>
+        <input type="radio" name="gender" value="male" checked>  Order Number
+        <input type="radio" name="gender" value="female">  Client Name
+        <input type="radio" name="gender" value="other">  Pick Up Date
+    </form>
+    <div class="input-group stylish-input-group">
+        <input type="text" class="form-control"  placeholder="" >
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+    </div>
+</section>
+<div class="container">
+    <h2>Search Glyph</h2>
+    <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
+    <p>Search icon as a link:
+        <a href="#">
+            <span class="glyphicon glyphicon-search"></span>
+        </a>
+    </p>
+    <p>Search icon on a button:
+        <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+    </p>
+    <p>Search icon on a styled link button:
+        <a href="#" class="btn btn-info btn-lg">
+            <span class="glyphicon glyphicon-search"></span> Search
+        </a>
+    </p>
+</div>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
