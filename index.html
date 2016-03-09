@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -44,34 +45,447 @@
         <input type="radio" name="gender" value="female">  Client Name
         <input type="radio" name="gender" value="other">  Pick Up Date
     </form>
-    <div class="input-group stylish-input-group">
-        <input type="text" class="form-control"  placeholder="" >
-                    <span class="input-group-addon">
-                        <button type="submit">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
+    <div class="input-group stylish-input-group searchdiv">
+        <input type="text" class="form-control inline-search"  placeholder="" >
+                    <span class="input-group-addon inline-search">
+                            <span class="glyphicon glyphicon-search inline-search"></span>
                     </span>
     </div>
 </section>
-<div class="container">
-    <h2>Search Glyph</h2>
-    <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
-    <p>Search icon as a link:
-        <a href="#">
-            <span class="glyphicon glyphicon-search"></span>
-        </a>
-    </p>
-    <p>Search icon on a button:
-        <button type="button" class="btn btn-default btn-sm">
-            <span class="glyphicon glyphicon-search"></span> Search
-        </button>
-    </p>
-    <p>Search icon on a styled link button:
-        <a href="#" class="btn btn-info btn-lg">
-            <span class="glyphicon glyphicon-search"></span> Search
-        </a>
-    </p>
-</div>
+<section class="factivebookings">
+    <h3 class="text-uppercase separation-line">
+        Future active bookings
+    </h3>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Booking Number</th>
+            <th>Driver's Name</th>
+            <th>Pick up Country</th>
+            <th>Pick up station</th>
+            <th>Pick up Date</th>
+            <th>Sipp Code</th>
+            <th>Days</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>34643562</td>
+                <td>Hil Gal/Mrs</td>
+                <td>Germany</td>
+                <td>Frankfurt Airport - terminal 1</td>
+                <td>26/5/15</td>
+                <td>3</td>
+                <td>CCMV</td>
+                <td>On Request</td>
+                <td>? | X</td>
+            </tr>
+            <tr>
+                <td>34643562</td>
+                <td>Hil Gal/Mrs</td>
+                <td>Germany</td>
+                <td>Frankfurt Airport - terminal 1</td>
+                <td>26/5/15</td>
+                <td>3</td>
+                <td>CCMV</td>
+                <td>On Request</td>
+                <td>? | X</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3 class="text-uppercase separation-line">
+        valid price quotes
+    </h3>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Booking Number</th>
+            <th>Driver's Name</th>
+            <th>Pick up Country</th>
+            <th>Pick up station</th>
+            <th>Pick up Date</th>
+            <th>Sipp Code</th>
+            <th>days</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>34643562</td>
+            <td>Hil Gal/Mrs</td>
+            <td>Germany</td>
+            <td>Frankfurt Airport - terminal 1</td>
+            <td>26/5/15</td>
+            <td>3</td>
+            <td>CCMV</td>
+            <td>On Request</td>
+            <td>checkmark</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+<section class="subscribe">
+    <div class="wrapper row">
+        <div class="row">
+            <span class="subscribe-for">
+                Subscribe for special
+            </span>
+                <input type="text" class=""  placeholder="enter your email address here" >
+                <btn class="subscribe-btn">Submit</btn>
+        </div>
+    </div>
+</section>
+<section class="bottom-nav">
+    <div class="row hidden-xs hidden-sm">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="car-rental-in">
+                <div class="car-rental-in-usa">
+                    Car rental in USA
+                </div>
+                <div class="car_rental_in_city custom-collapse">
+                    <span>
+                        Car rental in California
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in Florida
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in New York
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in Los Angeles
+                    </span>
+                    <br>
+                   <span>
+                     Car rental in Miami
+                   </span>
+                    <br>
+                    <span>
+                       Car rental in Orlando
+                    </span>
+                    <br>
+                    <span>
+                         Car rental in Las Vegas
+                   </span>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="car-rental-in">
+                <div class="car-rental-in-usa">
+                    car rental in USA
+                </div>
+                <div class="car_rental_in_city">
+                    <span>
+                        Car rental in California
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in Florida
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in New York
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in Los Angeles
+                    </span>
+                    <br>
+                   <span>
+                     Car rental in Miami
+                   </span>
+                    <br>
+                    <span>
+                       Car rental in Orlando
+                    </span>
+                    <br>
+                    <span>
+                         Car rental in Las Vegas
+                   </span>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="car-rental-in">
+                <div class="car-rental-in-usa">
+                    car rental in USA
+                </div>
+                <div class="car_rental_in_city">
+                    <span>
+                        Car rental in California
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in Florida
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in New York
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in Los Angeles
+                    </span>
+                    <br>
+                   <span>
+                     Car rental in Miami
+                   </span>
+                    <br>
+                    <span>
+                       Car rental in Orlando
+                    </span>
+                    <br>
+                    <span>
+                         Car rental in Las Vegas
+                   </span>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="car-rental-in">
+                <div class="car-rental-in-usa">
+                    Car rental in USA
+                </div>
+                <div class="car_rental_in_city">
+                    <span>
+                        Car rental in California
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in Florida
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in New York
+                    </span>
+                    <br>
+                    <span>
+                        Car rental in Los Angeles
+                    </span>
+                    <br>
+                   <span>
+                     Car rental in Miami
+                   </span>
+                    <br>
+                    <span>
+                       Car rental in Orlando
+                    </span>
+                    <br>
+                    <span>
+                         Car rental in Las Vegas
+                   </span>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="visible-xs-block visible-sm-block row">
+        <div class="row container">
+            <div class="panel-group">
+                <div class="panel panel-default custom-panel">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" href="#panel1" class="collapsed">
+                                Car rental in USA</a>
+                            <img class="pointer" src="images/icon-arrow-down-b-128.png">
+                        </div>
+                    </div>
+                    <div id="panel1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <span>
+                                Car rental in California
+                            </span>
+                            <br>
+                            <span>
+                                Car rental in Florida
+                            </span>
+                            <br>
+                            <span>
+                                Car rental in New York
+                            </span>
+                            <br>
+                            <span>
+                                Car rental in Los Angeles
+                            </span>
+                            <br>
+                            <span>
+                                Car rental in Miami
+                            </span>
+                            <br>
+                            <span>
+                                Car rental in Orlando
+                            </span>
+                            <br>
+                            <span>
+                                 Car rental in Las Vegas
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default custom-panel">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" href="#panel2" class="collapsed">
+                                Car rental in USA</a>
+                            <img class="pointer" src="images/icon-arrow-down-b-128.png">
+                        </div>
+                    </div>
+                    <div id="panel2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <span>
+                                Car rental in California
+                            </span>
+                            <br>
+                            <span>
+                                Car rental in Florida
+                            </span>
+                            <br>
+                            <span>
+                                Car rental in New York
+                            </span>
+                            <br>
+                            <span>
+                                Car rental in Los Angeles
+                            </span>
+                            <br>
+                            <span>
+                                Car rental in Miami
+                            </span>
+                            <br>
+                            <span>
+                                Car rental in Orlando
+                            </span>
+                            <br>
+                            <span>
+                                 Car rental in Las Vegas
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row container">
+                <div class="panel-group">
+                    <div class="panel panel-default custom-panel">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <a data-toggle="collapse" href="#panel3" class="collapsed">
+                                    Car rental in USA</a>
+                                <img class="pointer" src="images/icon-arrow-down-b-128.png">
+                            </div>
+                        </div>
+                        <div id="panel3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            <span>
+                                Car rental in California
+                            </span>
+                                <br>
+                            <span>
+                                Car rental in Florida
+                            </span>
+                                <br>
+                            <span>
+                                Car rental in New York
+                            </span>
+                                <br>
+                            <span>
+                                Car rental in Los Angeles
+                            </span>
+                                <br>
+                            <span>
+                                Car rental in Miami
+                            </span>
+                                <br>
+                            <span>
+                                Car rental in Orlando
+                            </span>
+                                <br>
+                            <span>
+                                 Car rental in Las Vegas
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default custom-panel">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <a data-toggle="collapse" href="#panel4" class="collapsed">
+                                    Car rental in USA</a>
+                                <img class="pointer" src="images/icon-arrow-down-b-128.png">
+                            </div>
+                        </div>
+                        <div id="panel4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <span>
+                                    Car rental in California
+                                </span>
+                                    <br>
+                                <span>
+                                    Car rental in Florida
+                                </span>
+                                    <br>
+                                <span>
+                                    Car rental in New York
+                                </span>
+                                    <br>
+                                <span>
+                                    Car rental in Los Angeles
+                                </span>
+                                    <br>
+                                <span>
+                                    Car rental in Miami
+                                </span>
+                                    <br>
+                                <span>
+                                    Car rental in Orlando
+                                </span>
+                                    <br>
+                                <span>
+                                     Car rental in Las Vegas
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="flags-section">
+    <div class="flags-row">
+        <span class="worldwide">
+            worldwide websites:
+        </span>
+            <span class="flags-icons">
+                <img class="flag" src="images/1.gif">
+                <img class="flag" src="images/2.gif">
+                <img class="flag" src="images/3.gif">
+                <img class="flag" src="images/4.gif">
+                <img class="flag" src="images/5.gif">
+            </span>
+    </div>
+</section>
+<section class="footer row">
+    <div class="row">
+        <span class="all-rights">
+             © All rights reserved to ofran services ltd.
+        </span>
+        <img class="matrix" src="images/matrix.png">
+    </div>
+
+</section>
+
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
