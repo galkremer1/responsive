@@ -25,58 +25,66 @@
     <img class="ofran-logo" src="images/drive-more.png">
 </section>
 <section class="bookings-header">
-    <h3 class="text-uppercase separation-line">
-        bookings and price quotes
-    </h3>
-    <h5>
-        Below are the details of your future active bookings and your valid price quotes. <br/>
-        Please note that international one way rentals/price quotes, and out of operational hours rentals/price quotes, will
-        not appear in this list.<br/>
-        For this, please call our call center at 03-7951010.
-    </h5>
-    <btn class="btn booking-btn">Create New Booking</btn>
+    <div class="row">
+        <h3 class="text-uppercase separation-line">
+            bookings and price quotes
+        </h3>
+        <h5>
+            Below are the details of your future active bookings and your valid price quotes. <br/>
+            Please note that international one way rentals/price quotes, and out of operational hours rentals/price quotes, will
+            not appear in this list.<br/>
+            For this, please call our call center at 03-7951010.
+        </h5>
+        <btn class="btn booking-btn">Create New Booking</btn>
+    </div>
 </section>
 <section class="search-filter">
 <h4>
     Find reservation by:
 </h4>
-    <form>
-        <span style="float: left">
-            <input type="radio" name="search-param" value="order" checked>  Order Number
-        </span>
-        <span>
-            <input type="radio" name="search-param" value="name">  Client Name
-        </span>
-        <span style="float: right">
-            <input type="radio" name="search-param" value="pickup">  Pick Up Date
-        </span>
-    </form>
-    <div class="input-group stylish-input-group searchdiv">
-        <input type="text" class="form-control inline-search"  placeholder="" >
+    <div class="searchdiv">
+        <div class="searchdiv-options">
+            <form>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <input type="radio" name="search-param" id="order" checked><label for="order">Order Number </label>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <input type="radio" name="search-param" id="name"><label for="name">Client Name</label>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <input type="radio" name="search-param" id="pickup"><label for="pickup" class="pickup">Pick Up Date</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="input-group stylish-input-group">
+            <input type="text" class="form-control inline-search"  placeholder="" >
                     <span class="input-group-addon inline-search">
                             <span class="glyphicon glyphicon-search inline-search"></span>
                     </span>
+        </div>
     </div>
 </section>
-<section class="factivebookings">
-    <h3 class="text-uppercase separation-line">
-        Future active bookings
-    </h3>
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th>Booking Number</th>
-            <th>Driver's Name</th>
-            <th>Pick up Country</th>
-            <th>Pick up station</th>
-            <th>Pick up Date</th>
-            <th>Sipp Code</th>
-            <th>Days</th>
-            <th>Status</th>
-            <th>Actions</th>
-        </tr>
-        </thead>
-        <tbody>
+<section>
+    <div class="factivebookings">
+        <h3 class="text-uppercase separation-line">
+            Future active bookings
+        </h3>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Booking Number</th>
+                <th>Driver's Name</th>
+                <th>Pick up Country</th>
+                <th>Pick up station</th>
+                <th>Pick up Date</th>
+                <th>Sipp Code</th>
+                <th>Days</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>34643562</td>
                 <td>Hil Gal/Mrs</td>
@@ -99,39 +107,42 @@
                 <td>On Request</td>
                 <td>? | X</td>
             </tr>
-        </tbody>
-    </table>
-    <h3 class="text-uppercase separation-line">
-        valid price quotes
-    </h3>
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th>Booking Number</th>
-            <th>Driver's Name</th>
-            <th>Pick up Country</th>
-            <th>Pick up station</th>
-            <th>Pick up Date</th>
-            <th>Sipp Code</th>
-            <th>days</th>
-            <th>Status</th>
-            <th>Actions</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>34643562</td>
-            <td>Hil Gal/Mrs</td>
-            <td>Germany</td>
-            <td>Frankfurt Airport - terminal 1</td>
-            <td>26/5/15</td>
-            <td>3</td>
-            <td>CCMV</td>
-            <td>On Request</td>
-            <td>checkmark</td>
-        </tr>
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
+   <div class="factivebookings">
+       <h3 class="text-uppercase separation-line">
+           valid price quotes
+       </h3>
+       <table class="table table-bordered">
+           <thead>
+           <tr>
+               <th>Booking Number</th>
+               <th>Driver's Name</th>
+               <th>Pick up Country</th>
+               <th>Pick up station</th>
+               <th>Pick up Date</th>
+               <th>Sipp Code</th>
+               <th>days</th>
+               <th>Status</th>
+               <th>Actions</th>
+           </tr>
+           </thead>
+           <tbody>
+           <tr>
+               <td>34643562</td>
+               <td>Hil Gal/Mrs</td>
+               <td>Germany</td>
+               <td>Frankfurt Airport - terminal 1</td>
+               <td>26/5/15</td>
+               <td>3</td>
+               <td>CCMV</td>
+               <td>On Request</td>
+               <td>checkmark</td>
+           </tr>
+           </tbody>
+       </table>
+   </div>
 </section>
 <section class="subscribe">
     <div class="wrapper row">

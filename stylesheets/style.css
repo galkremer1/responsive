@@ -8812,9 +8812,9 @@ body {
 
 /* line 29, ../sass/style.scss */
 .bookings-header {
-  padding-left: 60px;
-  padding-right: 60px;
-  height: 170px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 28px;
 }
 
 /* line 34, ../sass/style.scss */
@@ -8827,71 +8827,108 @@ body {
 
 /* line 41, ../sass/style.scss */
 .search-filter {
-  text-align: center;
   background-color: #edeff0;
-  height: 200px;
   margin-left: 60px;
   margin-right: 60px;
   padding-top: 20px;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-bottom: 50px;
+  /* CUSTOM RADIO AND CHECKBOX STYLES */
 }
-/* line 51, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
+.search-filter h4 {
+  text-align: center;
+}
+/* line 50, ../sass/style.scss */
+.search-filter .pickup {
+  float: right;
+}
+/* line 53, ../sass/style.scss */
 .search-filter input[type=radio] {
   width: 28px;
-  margin-left: 100px;
 }
-/* line 55, ../sass/style.scss */
-.search-filter form {
-  margin-left: -100px;
+/* line 57, ../sass/style.scss */
+.search-filter input[type=radio] {
+  /* Hide original inputs */
+  visibility: hidden;
+  position: absolute;
 }
-/* line 58, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
+.search-filter input[type=radio] + label:before {
+  height: 14px;
+  width: 14px;
+  margin-right: 10px;
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #777;
+}
+/* line 71, ../sass/style.scss */
+.search-filter input[type=radio]:checked + label:before {
+  background: #f5ab00;
+}
+/* line 76, ../sass/style.scss */
+.search-filter input[type=radio] + label:before {
+  border-radius: 50%;
+}
+/* line 82, ../sass/style.scss */
 .search-filter .searchdiv {
   padding-top: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
-/* line 60, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .search-filter .searchdiv .inline-search {
   background-color: white;
   border-color: #f5ab00;
 }
-/* line 63, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .search-filter .searchdiv .inline-search .form-control {
   border-right: none;
 }
+/* line 93, ../sass/style.scss */
+.search-filter .searchdiv .searchdiv-options {
+  padding-bottom: 10px;
+}
+/* line 96, ../sass/style.scss */
+.search-filter .searchdiv .input-group {
+  padding-top: 10px;
+}
 
-/* line 73, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .factivebookings {
   margin-left: 60px;
   margin-right: 60px;
   padding-top: 20px;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
-/* line 79, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .factivebookings .table {
+  font-weight: 200;
+  white-space: nowrap;
   width: 100%;
 }
-/* line 81, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .factivebookings .table tbody {
   width: 500px;
 }
-/* line 84, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .factivebookings .table thead {
   background-color: #4b4b4c;
   color: white;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .subscribe {
   background-color: #4b4c4d;
   text-align: center;
 }
-/* line 95, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .subscribe .wrapper {
   height: auto;
   padding-bottom: 10px;
   padding-top: 10px;
 }
-/* line 100, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .subscribe .subscribe-for {
   color: white;
   font-size: 25px;
@@ -8899,7 +8936,7 @@ body {
   line-height: 38px;
   float: right;
 }
-/* line 107, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .subscribe input {
   width: 100%;
   height: 40px;
@@ -8907,7 +8944,7 @@ body {
   border: none;
   padding-left: 10px;
 }
-/* line 114, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .subscribe .subscribe-btn {
   padding: 10px 42px 10px 42px;
   border-radius: 7px;
@@ -8918,18 +8955,18 @@ body {
   float: left;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .bottom-nav {
   background-color: #c2c3c4;
   padding: 10px 0px 10px 20px;
 }
-/* line 129, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .bottom-nav .car-rental-in-usa {
   padding-bottom: 12px;
   font-weight: 400;
   font-size: 16px;
 }
-/* line 134, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .bottom-nav .car-rental-in {
   border-left: 1px solid #747474;
   width: 90%;
@@ -8938,19 +8975,19 @@ body {
   color: #747474;
 }
 
-/* line 143, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .flags-section {
   background-color: #2d2e2e;
   padding-top: 25px;
   padding-bottom: 25px;
 }
-/* line 147, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .flags-section .flags-row {
   text-align: center;
   margin-right: 15px;
   margin-left: 15px;
 }
-/* line 151, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .flags-section .flags-row .worldwide {
   display: inline-block;
   float: none;
@@ -8959,13 +8996,13 @@ body {
   color: grey;
   font-size: 16px;
 }
-/* line 160, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .flags-section .flags-row .flags-icons .flag {
   margin: 0 0 5px 5px;
   display: inline-block;
 }
 
-/* line 168, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .footer {
   background-color: #4c4c4c;
   padding-top: 25px;
@@ -8973,14 +9010,14 @@ body {
   text-align: center;
   padding-left: 250px;
 }
-/* line 174, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .footer .matrix {
   width: 154px;
   height: 27px;
   margin-left: 20px;
   display: inline-block;
 }
-/* line 180, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 .footer .all-rights {
   line-height: 32px;
   display: inline-block;
@@ -8993,122 +9030,145 @@ body {
 
 @media screen and (max-width: 768px) {
   box-sizing: border-box;
-  /* line 194, ../sass/style.scss */
-  .custom-collapse .collapse {
+  /* line 229, ../sass/style.scss */
+  .bottom-nav {
+    padding-left: 5px;
+  }
+  /* line 231, ../sass/style.scss */
+  .bottom-nav .custom-collapse .collapse {
     display: block;
   }
-
-  /* line 197, ../sass/style.scss */
-  .custom-panel {
+  /* line 234, ../sass/style.scss */
+  .bottom-nav .custom-panel {
     background-color: #c2c3c4;
   }
-
-  /* line 200, ../sass/style.scss */
-  .panel-title {
+  /* line 237, ../sass/style.scss */
+  .bottom-nav .panel-title {
     background-color: #c2c3c4;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
     color: inherit;
   }
-
-  /* line 207, ../sass/style.scss */
-  .panel-heading {
+  /* line 244, ../sass/style.scss */
+  .bottom-nav .panel-heading {
     padding: 0px;
   }
-
-  /* line 210, ../sass/style.scss */
-  .pointer {
+  /* line 247, ../sass/style.scss */
+  .bottom-nav .pointer {
     width: 20px;
     height: 20px;
     float: right;
     margin-right: 10px;
   }
-
-  /* line 216, ../sass/style.scss */
-  .container {
+  /* line 253, ../sass/style.scss */
+  .bottom-nav .container {
     width: 52%;
     display: inline-block;
   }
-  /* line 219, ../sass/style.scss */
-  .container .border-right {
+  /* line 256, ../sass/style.scss */
+  .bottom-nav .container .border-right {
     border-right: 2px solid white;
   }
-  /* line 222, ../sass/style.scss */
-  .container .border-bottom {
+  /* line 259, ../sass/style.scss */
+  .bottom-nav .container .border-bottom {
     border-bottom: 2px solid white;
   }
 
-  /* line 226, ../sass/style.scss */
-  .bottom-nav {
-    padding-left: 5px;
-  }
-
-  /* line 229, ../sass/style.scss */
+  /* line 264, ../sass/style.scss */
   .panel-group {
     margin-top: -10px;
     margin-bottom: -10px;
   }
-  /* line 232, ../sass/style.scss */
+  /* line 267, ../sass/style.scss */
   .panel-group .panel {
     padding: 17px;
     border-radius: 0px;
   }
 
-  /* line 238, ../sass/style.scss */
+  /* line 273, ../sass/style.scss */
   .subscribe .wrapper {
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
   }
-  /* line 242, ../sass/style.scss */
+  /* line 277, ../sass/style.scss */
   .subscribe .wrapper .subscribe-for {
     float: left;
   }
 
-  /* line 247, ../sass/style.scss */
+  /* line 282, ../sass/style.scss */
   .footer {
+    padding-left: 10px;
+  }
+
+  /* line 285, ../sass/style.scss */
+  .factivebookings, .search-filter, .bookings-header {
+    margin: 0;
+  }
+
+  /* line 289, ../sass/style.scss */
+  .factivebookings h3 {
+    padding-left: 10px;
+  }
+
+  /* line 293, ../sass/style.scss */
+  .bookings-header {
+    padding-left: 15px;
+    padding-right: 18px;
+  }
+  /* line 296, ../sass/style.scss */
+  .bookings-header h3, .bookings-header h5 {
     padding-left: 10px;
   }
 }
 @media screen and (max-width: 420px) {
-  /* line 253, ../sass/style.scss */
-  .container {
+  /* line 304, ../sass/style.scss */
+  .search-filter h4 {
+    float: left;
+    padding-left: 55px;
+  }
+  /* line 308, ../sass/style.scss */
+  .search-filter label, .search-filter .pickup {
+    float: left;
+  }
+
+  /* line 313, ../sass/style.scss */
+  .bottom-nav .container {
     width: 100%;
     padding-right: 0px;
   }
-  /* line 256, ../sass/style.scss */
-  .container .border-right {
+  /* line 316, ../sass/style.scss */
+  .bottom-nav .container .border-right {
     border-right: 0px;
   }
-  /* line 259, ../sass/style.scss */
-  .container .border-bottom {
+  /* line 319, ../sass/style.scss */
+  .bottom-nav .container .border-bottom {
     border-bottom: 2px solid white;
   }
-  /* line 262, ../sass/style.scss */
-  .container .panel-group {
+  /* line 322, ../sass/style.scss */
+  .bottom-nav .container .panel-group {
     border-bottom: 2px solid white;
   }
-
-  /* line 266, ../sass/style.scss */
-  .container:first-of-type {
+  /* line 326, ../sass/style.scss */
+  .bottom-nav .container:first-of-type {
     padding-bottom: 25px;
   }
 
-  /* line 270, ../sass/style.scss */
+  /* line 331, ../sass/style.scss */
   .footer {
     padding-bottom: 25px;
     text-align: center;
     padding-left: 10px;
   }
-  /* line 274, ../sass/style.scss */
+  /* line 335, ../sass/style.scss */
   .footer .matrix {
     width: 154px;
     height: 27px;
     margin-left: 20px;
     display: inline-block;
   }
-  /* line 280, ../sass/style.scss */
+  /* line 341, ../sass/style.scss */
   .footer .all-rights {
     line-height: 32px;
     display: inline-block;
@@ -9119,8 +9179,42 @@ body {
     font-size: 16px;
   }
 
-  /* line 291, ../sass/style.scss */
+  /* line 352, ../sass/style.scss */
   .subscribe .subscribe-btn {
     margin-top: 10px;
+  }
+
+  /* line 356, ../sass/style.scss */
+  .factivebookings, .search-filter, .bookings-header {
+    margin: 0;
+  }
+
+  /* line 359, ../sass/style.scss */
+  .factivebookings {
+    padding-top: 0;
+  }
+  /* line 361, ../sass/style.scss */
+  .factivebookings h3 {
+    font-size: 20px;
+    padding-left: 12px;
+  }
+
+  /* line 367, ../sass/style.scss */
+  .bookings-header {
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+  }
+  /* line 372, ../sass/style.scss */
+  .bookings-header .booking-btn {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* line 378, ../sass/style.scss */
+  .table-bordered {
+    font-size: 10px;
   }
 }
