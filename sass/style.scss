@@ -9,14 +9,16 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-.header {
+.top-header {
   background-color: #f5ab00;
-  height: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+  .facebook-top {
+    float: right;
+    padding-top: 10px;
+  }
 }
 
-.ofran-logo {
-  padding-left: 60px;
-}
 
 .booking-btn {
   width: 200px;
@@ -31,6 +33,7 @@ body {
   padding-right: 75px;
   padding-bottom: 28px;
 }
+
 .separation-line {
   padding-bottom: 7px;
   border-bottom-style: solid;
@@ -50,10 +53,7 @@ body {
   .pickup {
     float: right;
   }
-  input[type=radio] {
-    width: 28px;
-  }
-  ////
+
   input[type=radio] {
     /* Hide original inputs */
     visibility: hidden;
@@ -77,9 +77,8 @@ body {
     border-radius:50%;
   }
 
-  ///
-
   .searchdiv {
+    text-align: center;
     padding-top: 20px;
     padding-left: 15%;
     padding-right: 15%;
@@ -98,7 +97,6 @@ body {
     }
   }
 }
-
 
 
 
@@ -200,11 +198,9 @@ body {
 }
 
 .footer {
-  background-color: #4c4c4c;
-  padding-top: 25px;
-  padding-bottom: 25px;
   text-align: center;
-  padding-left:250px;
+  background-color: #4c4c4c;
+  padding: 25px 0px 25px 250px;
   .matrix {
     width: 154px;
     height: 27px;
@@ -242,7 +238,7 @@ body {
       color: inherit;
     }
     .panel-heading {
-      padding: 0px
+      padding: 0;
     }
     .pointer {
       width: 20px;
@@ -300,6 +296,20 @@ body {
 }
 
 @media screen and (max-width: 420px) {
+  .bookings-header {
+    padding: 0px 10px 15px 10px;
+
+    .booking-btn {
+      width: 90%;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .table-bordered {
+    font-size: 10px;
+  }
+
+
   .search-filter {
     h4 {
       float: left;
@@ -309,12 +319,23 @@ body {
       float: left;
     }
   }
+  .factivebookings, .search-filter, .bookings-header {
+    margin: 0;
+  }
+  .factivebookings {
+    padding-top: 0;
+    h3 {
+      font-size: 20px;
+      padding-left: 12px;
+
+    }
+  }
   .bottom-nav {
     .container {
       width: 100%;
-      padding-right: 0px;
+      padding-right: 0;
       .border-right {
-        border-right: 0px;
+        border-right: 0;
       }
       .border-bottom {
         border-bottom: 2px solid white;
@@ -329,9 +350,8 @@ body {
   }
 
   .footer {
-    padding-bottom: 25px;
+    padding: 20px 0px 25px 10px;
     text-align: center;
-    padding-left:10px;
     .matrix {
       width: 154px;
       height: 27px;
@@ -352,31 +372,6 @@ body {
     .subscribe-btn {
       margin-top: 10px;
     }
-  }
-  .factivebookings, .search-filter, .bookings-header {
-    margin: 0;
-  }
-  .factivebookings {
-    padding-top: 0;
-    h3 {
-      font-size: 20px;
-      padding-left: 12px;
-
-    }
-  }
-  .bookings-header {
-    padding: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 15px;
-    .booking-btn {
-      width: 90%;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  }
-  .table-bordered {
-    font-size: 10px;
   }
 
 }
